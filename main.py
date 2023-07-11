@@ -49,4 +49,4 @@ data = {"data":
 
 @app.get("/")
 async def index():
-    return data
+    return {"data":data}
