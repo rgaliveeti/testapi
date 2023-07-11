@@ -4,8 +4,8 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-data = [
-  {
+data = {"data":
+  [{
     "category": "men's clothing",
     "description":
       "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
@@ -44,8 +44,8 @@ data = [
       { "size": 9, "sku": 2 },
     ],
     "title": "Mens Casual Premium Slim Fit T-Shirts ",
-  }
-]
+  }]
+       }
 
 @app.get("/")
 async def index():
